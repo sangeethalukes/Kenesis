@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+    margin-bottom: 0;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); /* Corrected box-shadow */
+}
+
+
+.logo img {
+    height: 90px;
+    padding-left: 150px; /* Adjust logo height as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-right: 150px;
+}
+
+nav ul li {
+    margin-left: 20px;
+    padding: 10px;
+    
+}
+
+nav ul li a {
+    color: #ff880d;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+nav ul li a:hover {
+    color: black;
+}
+.bgcolor {
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  /* Default background image */
+  .bgcolor {
+    background-image: url(assets/backk.png) ; /* Path to default background image */
+    background-size: cover;
+    
+  }
+  
+.background{
+    background-color: white;
+}
+/* Hero Section */
+header {
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #ff880d ;
+}
+
+
+h2 {
+    color: #ff880d ;
+}
+
+/* Services Section (3-row layout with animation) */
+#services {
+    margin: 20px 0;
+}
+
+#services .service-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#services li {
+    background-color: #ff880d;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Each item takes 30% of the width */
+    margin: 10px;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Animation when scrolled into view */
+#services li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#services li:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #services li {
+        width: 100%;
+    }
+}
+
+/* Call to Action Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+/* Footer */
+/* Footer Styles */
+footer {
+    background-color: #ff880d;
+    color: #111111;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1200px; /* Adjusted for better responsiveness */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Added gap for better spacing between sections */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Logo and Contact Info Section */
+.logoj img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.logoj p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.logoj a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.logoj a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .logoj {
+        margin-top: 20px;
+    }
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
