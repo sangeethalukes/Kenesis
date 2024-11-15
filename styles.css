@@ -58,7 +58,7 @@ nav ul li a:hover {
   
   /* Default background image */
   .bgcolor {
-    background-image: url(assets/backk.png) ; /* Path to default background image */
+    background-image: url(assets/backkk.png) ; /* Path to default background image */
     background-size: cover;
     
   }
@@ -83,44 +83,116 @@ h1 {
 h2 {
     color: #ff880d ;
 }
-
-/* Services Section (3-row layout with animation) */
-#services {
-    margin: 20px 0;
+#introduction {
+    padding: 40px;
+    background-color: #f9f9f9;
 }
 
-#services .service-row {
+#introduction h2 {
+    font-size: 2em;
+
+    text-align: left;
+}
+#introduction p{
+    font-size: 1.5em;
+}
+.content-wrapper {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
-#services li {
-    background-color: #ff880d;
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 30%; /* Each item takes 30% of the width */
-    margin: 10px;
-    transition: transform 0.3s ease;
-    opacity: 0;
-    transform: translateY(50px);
+.text-content {
+    flex: 1;
+    text-align: left;
 }
 
-/* Animation when scrolled into view */
-#services li.visible {
-    opacity: 1;
-    transform: translateY(0);
+.image-content {
+    flex: 1;
+    text-align: right;
 }
 
-#services li:hover {
-    transform: scale(1.05);
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
-    #services li {
-        width: 100%;
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
     }
+    
+    .text-content,
+    .image-content {
+        text-align: center;
+    }
+}
+
+/* Services Section (3-row layout with animation) */
+#services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 70px;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    padding-left: 50px;
+    
+}
+
+.ser{
+    padding: 20px;
+    font-size: 40px;
+}
+.service-item {
+    position: relative;
+    background-color: #ffb870;
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+
+.service-item p {
+    font-size: 0.9em;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
+
+
+.service-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 220px;
+    height: 120px;
+    opacity: 1;
+    margin-right: -60px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#services h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Call to Action Buttons */

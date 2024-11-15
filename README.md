@@ -1,2 +1,2 @@
 # Kenesis
-hi
+Welcome to Kenesis
