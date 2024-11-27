@@ -1,3 +1,154 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #ff880d;
+  opacity: 0.9; /* Change to the color you want */
+  color: #fff; /* Text color if needed */
+}
+/*navbar*/
+.image{
+    width:100%;
+    
+}
+.bgcolor{
+    background-image: url(assets/background.png) ; 
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  background-size: cover;
+}   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+  }
+  
+  .container-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .logo-image {
+    height: 110px;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ff8c42;
+  }
+  
+  .btn {
+    background-color: #ff880d;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .btn:hover {
+    background-color: rgba(51, 51, 51, 0.9);
+  }
+  
+  /* Mobile menu styles */
+  .mobile-only {
+    display: none;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+    color: #333333;
+    transition: color 0.3s;
+  }
+  
+  .menu-icon:hover {
+    color: #ff8c42;
+  }
+  
+  .mobile-menu {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .mobile-nav-link {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+  }
+  
+  .mobile-nav-link:hover {
+    color: #ff8c42;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .desktop-only {
+      display: none;
+    }
+  
+    .mobile-only {
+      display: block;
+    }
+  }
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -38,9 +189,80 @@ section p {
     margin-top: 10px;
 }
 
+/* Footer Styles */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
+    height: 200px;
+    /*background-image: url(assets/bbb.png) ; */
+    background-color: #ff880d; /* For browsers that do not support gradients */
+    /*background-image: linear-gradient(to right, #fab742, #f35014);*/
+      color: #111111;
+      padding: 30px 0;
+  }
+  
+  .container {
+      max-width: 1200px; /* Adjusted for better responsiveness */
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px; /* Added gap for better spacing between sections */
+  }
+  
+  .footer-section {
+      flex: 1;
+      min-width: 250px;
+  }
+  
+  .footer-section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+      font-size: 14px;
+      margin: 5px 0;
+  }
+  
+  .footer-section ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .footer-section ul li {
+      margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+      color: #111111;
+      text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+      text-decoration: underline;
+  }
+  .logoj img {
+    width: 100px;
+    margin-bottom: 10px;
 }
+
+.logoj p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.logoj a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.logoj a:hover {
+    text-decoration: underline;
+}
+  
