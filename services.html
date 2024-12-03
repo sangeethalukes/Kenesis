@@ -1,74 +1,177 @@
-<section id="services" class="services-section">
-    <div class="container">
-      <h2 class="section-title">Services</h2>
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="stethoscope-icon.svg" alt="Stethoscope Icon" />
-          </div>
-          <h3 class="service-title">Certified Nurses</h3>
-          <p class="service-description">
-            Experienced, licensed nurses for medical needs.
-          </p>
-          <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
-              alt="Certified Nurses"
-            />
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenesis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar fixed w-full bg-white shadow-sm z-50" id="navbar">
+    <div class="container-nav">
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <img src="assets/k.png" alt="Logo" class="logo-image">
         </div>
-  
-        <!-- Service 2 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="brush-icon.svg" alt="Brush Icon" />
+
+        <div class="nav-links desktop-only">
+          <a href="index.html" class="nav-link">Home</a>
+          <div class="nav-item">
+            <a href="#services" class="nav-ser">Services&nbsp;<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-menu hidden">
+              <a href="nurses.html" class="dropdown-link">Certified Nurses</a>
+              <a href="carers.html" class="dropdown-link">Qualified Carers</a>
+              <a href="cleaning.html" class="dropdown-link">Cleaning Staff</a>
+              <a href="staffing.html" class="dropdown-link">Staffing Solutions</a>
+            </div>
           </div>
-          <h3 class="service-title">Cleaning Staff</h3>
-          <p class="service-description">
-            Qualified cleaning staff, based upon your needs.
-          </p>
-          <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80"
-              alt="Cleaning Staff"
-            />
-          </div>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="btn">Contact Us</a>
         </div>
-  
-        <!-- Service 3 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="heart-icon.svg" alt="Heart Icon" />
-          </div>
-          <h3 class="service-title">Qualified Carers</h3>
-          <p class="service-description">
-            Skilled carers for personal care and daily tasks.
-          </p>
-          <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80"
-              alt="Qualified Carers"
-            />
-          </div>
-        </div>
-  
-        <!-- Service 4 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="users-icon.svg" alt="Users Icon" />
-          </div>
-          <h3 class="service-title">Flexible Staffing Solutions</h3>
-          <p class="service-description">
-            Customized staffing for your needs.
-          </p>
-          <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80"
-              alt="Flexible Staffing Solutions"
-            />
-          </div>
-        </div>
+
+        <button class="menu-button mobile-only" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
-  </section>
+
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+  </nav>
+
+
+  <script>
+    // Get the navbar element
+    const navbar = document.getElementById('navbar');
+
+    // Listen for the scroll event
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color change
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+    <section id="services" class="services-section">
+        <div class="container">
+          <h2 class="section-title">Services</h2>
+          <div class="services-grid">
+            <!-- Service 1 -->
+            <a href="nurses.html" class="service-link">
+              <div class="service-card">
+                <div class="service-icon">
+                  <img src="assets/stethoscope.png" alt="Stethoscope Icon" />
+                </div>
+                <h3 class="service-title">Certified Nurses</h3>
+                <p class="service-description">
+                  Experienced, licensed nurses for medical needs.
+                </p>
+                <div class="service-image">
+                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
+                    alt="Certified Nurses" />
+                </div>
+              </div>
+            </a>
+    
+    
+    
+            <!-- Service 3 -->
+            <a href="carers.html" class="service-link">
+              <div class="service-card">
+                <div class="service-icon">
+                  <img src="assets/heart.png" alt="Heart Icon" />
+                </div>
+                <h3 class="service-title">Qualified Carers</h3>
+                <p class="service-description">
+                  Skilled carers for personal care and daily tasks.
+                </p>
+                <div class="service-image">
+                  <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80"
+                    alt="Qualified Carers" />
+                </div>
+              </div>
+            </a>
+            <!-- Service 2 -->
+            <a href="cleaning.html" class="service-link">
+              <div class="service-card">
+                <div class="service-icon">
+                  <img src="assets/paint-brush.png" alt="Brush Icon" />
+                </div>
+                <h3 class="service-title">Cleaning Staff</h3>
+                <p class="service-description">
+                  Qualified cleaning staff, based upon your needs.
+                </p>
+                <div class="service-image">
+                  <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80"
+                    alt="Cleaning Staff" />
+                </div>
+              </div>
+            </a>
+    
+            <!-- Service 4 -->
+            <a href="staffing.html" class="service-link">
+              <div class="service-card">
+                <div class="service-icon">
+                  <img src="assets/person.png" alt="Users Icon" />
+                </div>
+                <h3 class="service-title">Staffing Solutions</h3>
+                <p class="service-description">
+                  Customized staffing for your needs.
+                </p>
+                <div class="service-image">
+                  <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80"
+                    alt="Flexible Staffing Solutions" />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <script>// Select all service cards
+        // Select all service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+    
+        // Create the Intersection Observer
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                // Apply animations for left or right based on index
+                if (index % 4 < 2) {
+                  // First 2 cards: animate from left
+                  entry.target.style.animationDelay = `${index * 0.5}s`;
+                  entry.target.classList.add('animate-left');
+                } else {
+                  // Next 2 cards: animate from right
+                  entry.target.style.animationDelay = `${index * 0.5}s`;
+                  entry.target.classList.add('animate-right');
+                }
+                observer.unobserve(entry.target); // Stop observing once animated
+              }
+            });
+          },
+          { threshold: 0.2 } // Trigger animation when 20% of the card is visible
+        );
+    
+        // Observe each service card
+        serviceCards.forEach(card => observer.observe(card));
+    </script>
+</body>
+</html>
