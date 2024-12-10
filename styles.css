@@ -614,7 +614,7 @@ body {
   
   .services-section {
     padding: 5rem 1rem;
-    background: linear-gradient(to bottom, #ffffff, #f9fafb);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
   }
   
   .container {
@@ -714,7 +714,9 @@ body {
   }
   
   .contact-section {
-    padding: 5rem 1rem;
+  margin-bottom: -40px;
+    background-color: #ffa8519b;
+    overflow: hidden;
   }
   
   .container {
@@ -745,10 +747,13 @@ body {
     margin-bottom: 2rem;
     text-align: left;
   }
-  
+  .contact-info{
+    padding-left: 60px;
+  }
   .contact-details {
     display: grid;
     gap: 1.5rem;
+    padding-left: 50px;
   }
   
   .contact-item {
@@ -776,6 +781,8 @@ body {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 50px;
+  padding-right: 50px;
 }
 .forml{
   text-align: left;
@@ -822,28 +829,16 @@ label {
 .form-button:hover {
   background-color: #ff7a24;
 }
-
-
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-content {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .footer-section {
-      text-align: center;
-  }
-
-  .logoj {
-      margin-top: 20px;
-  }
+.wave-container{
+  
 }
+
+
+
+
+
+
+
 
 
 
@@ -852,11 +847,11 @@ label {
 
   /* Certifications */
 
-  .certifications-section{
+  /*.certifications-section{
     background: linear-gradient(90deg, #ffad5c, #ff880d);
-  }
+  }*/
 
-  .certifications-section {
+  /*.certifications-section {
     text-align: center;
     padding: 40px 20px;
     background-image: url(assets/certifi.png);
@@ -867,16 +862,30 @@ label {
   background-size: cover;
   
   
+  }*/
+  
+  .certifications-section {
+    text-align: center;
+    background-color: white;
+
   }
- 
-  
-  
+  /*.bgc{
+    background-image: url(assets/kenn.png) ; 
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}*/
   .certifications-section h2 {
     font-size: 2rem;
+    margin-top: -40px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #ff880d;
     font-family: sans-serif;
     font-weight: bold;
+    text-align: center;
+    margin-right: -100px;
     /*text-shadow: 
     2px 2px 0px rgba(255, 255, 255, 0.904), 
     -2px -2px 0px rgba(255, 255, 255, 0.894),
@@ -888,7 +897,8 @@ label {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-right: -50px;
+    margin-right: -130px;
+    
   }
   
   .certifications-logos img {
@@ -896,6 +906,7 @@ label {
     height: auto;
     transition: transform 0.3s ease-in-out;
     border-radius: 20px;
+    margin-bottom: 15px;
     
   }
   
@@ -1044,80 +1055,130 @@ body, h1, h2, h3, p, ul, ol, li, figure {
 
   /* Footer */
 /* Footer Styles */
+/* General Footer Styling (unchanged) */
 footer {
-  height: 200px;
-  /*background-image: url(assets/bbb.png) ; */
-  background-color: #ff880d; /* For browsers that do not support gradients */
-  /*background-image: linear-gradient(to right, #fab742, #f35014);*/
-    color: #111111;
-    padding: 30px 0;
+  height: auto; /* Adjust height to fit content dynamically */
+  background-color: #ff880d; /* Vibrant background */
+  color: #111111;
+  padding: 30px 0;
 }
-
-.container {
-    max-width: 1200px; /* Adjusted for better responsiveness */
-    margin: 0 auto;
-    padding: 0 20px;
+.wave-fcontainer{
+  margin-top: -100px;
+}
+.fcontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px; /* Added gap for better spacing between sections */
+  margin-top: -50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 250px;
+  flex: 1;
+  min-width: 250px;
 }
 
 .footer-section h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .footer-section p,
 .footer-section ul {
-    font-size: 14px;
-    margin: 5px 0;
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 .footer-section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-section ul li a {
-    color: #111111;
-    text-decoration: none;
+  color: #111111;
+  text-decoration: none;
 }
 
 .footer-section ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Styling for the Phone Info Section */
+.footer-section-ph {
+   /* Subtle background for contrast */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.footer-section-ph h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: black; /* Highlighted heading color */
+}
+
+.footer-section-ph p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.footer-section-ph a {
+  color: #852c02;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-section-ph a:hover {
+  text-decoration: underline;
 }
 
 /* Logo and Contact Info Section */
 .logoj img {
-    width: 100px;
-    margin-bottom: 10px;
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 .logoj p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
 }
 
 .logoj a {
-    color: #111111;
-    text-decoration: none;
+  color: #111111;
+  text-decoration: none;
 }
 
 .logoj a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+  }
+  .footer-section-ph {
+    text-align: center;
+  }
+  .logoj img {
+    margin: 0 auto;
+  }
 }

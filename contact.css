@@ -260,10 +260,9 @@ body {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.208);
     margin-top: -40px;
-    margin-left: 10px;
-    margin-right: 20px;
+    
 }
 
 .contact-form label {
@@ -314,7 +313,9 @@ body {
     }
 
     .contact-form {
-        width: 90%; /* Make sure the form takes full width */
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 20px; /* Make sure the form takes full width */
     }
 }
   
