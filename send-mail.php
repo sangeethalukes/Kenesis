@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Email settings
     $to = "sangeethaluke@gmail.com"; // Replace with your email
-    $subject = "New Contact Form Submission";
+    $subject = "New Contact Form Submission to Kenesis";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
 

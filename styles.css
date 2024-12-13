@@ -66,11 +66,7 @@ nav ul li a:hover {
 
 
 /* Global styles */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
+
 
 .relative {
   position: relative;
@@ -127,7 +123,7 @@ body {
 
 /* Background image overlay */
 .bg-image-overlay {
-  background-image: url('assets/backkk.png');
+  background-image: url('assets/backpop.png');
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -138,7 +134,7 @@ body {
   font-size: 2.5rem;
   color: black;
   font-weight: 700;
-  font-family:poppins;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 1.5rem;
   margin-top: 200px;
   text-align:left;
@@ -149,7 +145,7 @@ body {
   font-size: 1.125rem;
   margin-bottom: 2rem;
   text-align: left;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Buttons */
@@ -222,7 +218,7 @@ body {
   
   
   .bgcolor {
-    background-image: url(assets/background.png) ; 
+    background-image: url(assets/backpop.png) ; 
   /*background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;*/
@@ -299,12 +295,6 @@ h2 {
 }*/
 
 /* General styles nav */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   
   .navbar {
     position: fixed;
@@ -606,12 +596,6 @@ body {
 }
 
   
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
   .services-section {
     padding: 5rem 1rem;
     background: linear-gradient(to bottom, #ffffff, #ffffff);
@@ -627,7 +611,7 @@ body {
     color: #ff880d;
     
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 3rem;
@@ -706,17 +690,13 @@ body {
   background-size: cover;
     
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-  }
+
   
   .contact-section {
   margin-bottom: -40px;
     background-color: #ffa8519b;
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
   }
   
   .container {
@@ -735,7 +715,7 @@ body {
     color: #ff880d;
     
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 1rem;
@@ -772,8 +752,24 @@ body {
     text-align: left;
   }
   
-  .contact-text {
+  .contact-text a {
     color: #666666;
+    text-decoration: none; /* Removes underline */
+  }
+  .contact-text{
+    color: #666666;
+  }
+  .wave-container{
+    padding-bottom: -500px;
+    filter: blur(5px);
+    
+  }
+  .bottom-wave{
+    margin-top: -100px;
+  }
+  .top-wave{
+    margin-top: -100px;
+
   }
 /* Contact Form */
 .contact-form {
@@ -783,6 +779,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-right: 50px;
   padding-right: 50px;
+  font-family: 'Poppins', sans-serif;
 }
 .forml{
   text-align: left;
@@ -815,7 +812,7 @@ label {
 }
 
 .form-button {
-  width: 100%;
+  width: 50%;
   background-color: #ff8c42;
   color: #ffffff;
   padding: 0.75rem;
@@ -824,13 +821,11 @@ label {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .form-button:hover {
   background-color: #ff7a24;
-}
-.wave-container{
-  
 }
 
 
@@ -879,13 +874,13 @@ label {
 }*/
   .certifications-section h2 {
     font-size: 2rem;
-    margin-top: -40px;
-    margin-bottom: 20px;
     color: #ff880d;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-right: -100px;
+    position: relative;
+    margin-right: -80px;
+    margin-top: -100px;
     /*text-shadow: 
     2px 2px 0px rgba(255, 255, 255, 0.904), 
     -2px -2px 0px rgba(255, 255, 255, 0.894),
@@ -898,7 +893,8 @@ label {
     justify-content: center;
     gap: 20px;
     margin-right: -130px;
-    
+    margin-bottom: -80px;
+    position: relative;
   }
   
   .certifications-logos img {
@@ -925,7 +921,7 @@ label {
     font-size: 12px;
     margin-top: 20px;
 }
-body, h1, h2, h3, p, ul, ol, li, figure {
+h1, h2, h3, p, ul, ol, li, figure {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -934,10 +930,9 @@ body, h1, h2, h3, p, ul, ol, li, figure {
   /* About Section */
   .about-section {
     padding: 5rem 1rem;
-    background-color: white;
   }
 
-  .container {
+  .acontainer {
     max-width: 1201px;
     margin: 0 auto;
   }
@@ -962,7 +957,7 @@ body, h1, h2, h3, p, ul, ol, li, figure {
     color: #ff880d;
     
     text-align: left;
-    font-family:sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 35px;
   }
@@ -973,7 +968,7 @@ body, h1, h2, h3, p, ul, ol, li, figure {
     margin-bottom: 1.5rem;
     font-size: 20px;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   /* Profile Section */
@@ -992,11 +987,11 @@ body, h1, h2, h3, p, ul, ol, li, figure {
 
   .profile-name {
     font-weight: 600;
-    color: #1a202c;
+    color: #ffffff;
   }
 
   .profile-role {
-    color: #FF8C42;
+    color: #ffffff;
   }
 
   /* Stats Grid */
@@ -1047,7 +1042,7 @@ body, h1, h2, h3, p, ul, ol, li, figure {
 
   .stat-card:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #ff860d1d ;
+    background-color: #ff860d06 ;
   }
 
 
@@ -1063,7 +1058,8 @@ footer {
   padding: 30px 0;
 }
 .wave-fcontainer{
-  margin-top: -100px;
+  margin-top: -120px;
+  
 }
 .fcontainer {
   max-width: 1200px;

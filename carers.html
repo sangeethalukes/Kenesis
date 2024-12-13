@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenesis</title>
     <link rel="stylesheet" href="carers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body> 
+<body>
   <nav class="navbar fixed w-full bg-white shadow-sm z-50" id="navbar">
     <div class="container-nav">
       <div class="navbar-wrapper">
         <div class="logo">
           <img src="assets/k.png" alt="Logo" class="logo-image">
         </div>
-  
+
         <div class="nav-links desktop-only">
           <a href="index.html" class="nav-link">Home</a>
           <div class="nav-item">
             <a href="#services" class="nav-ser">Services&nbsp;<span class="dropdown-icon">▼</span></a>
             <div class="dropdown-menu hidden">
-              <a href="nurses.html" class="dropdown-link">Certified Nurses</a>
               <a href="carers.html" class="dropdown-link">Qualified Carers</a>
+              <a href="nurses.html" class="dropdown-link">Certified Nurses</a>
               <a href="cleaning.html" class="dropdown-link">Cleaning Staff</a>
               <a href="staffing.html" class="dropdown-link">Staffing Solutions</a>
             </div>
@@ -28,9 +29,10 @@
           <a href="about.html" class="nav-link">About</a>
           <a href="contact.html" class="btn">Contact Us</a>
         </div>
-  
+
         <button class="menu-button mobile-only" onclick="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -38,73 +40,127 @@
         </button>
       </div>
     </div>
-  
+
     <div class="mobile-menu hidden" id="mobile-menu">
-        <a href="index.html" class="mobile-nav-link">Home</a>
-        <a href="services.html" class="mobile-nav-link">Services</a>
-        <a href="about.html" class="mobile-nav-link">About</a>
-        <a href="contact.html" class="mobile-nav-link">Contact Us</a>
-      </div>
-    </nav>
-  
-  
-    <script>
-      // Get the navbar element
-const navbar = document.getElementById('navbar');
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+  </nav>
 
-// Listen for the scroll event
-window.addEventListener('scroll', function() {
-  if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color change
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
 
-      function toggleMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
+  <script>
+    // Get the navbar element
+    const navbar = document.getElementById('navbar');
+
+    // Listen for the scroll event
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color change
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
       }
-    </script>
-    <img class="image" src="assets/carers.png">
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+    <img class="image" src="assets/caren.png">
     <!--<div class="bgcolor" id="backgroundDiv">-->
-        <section>
-            
-            <h2>Experienced and Licensed Nurses</h2>
-            <p>Our certified nurses are highly trained and experienced in delivering medical care tailored to your needs. Whether it’s administering medication, monitoring health, or providing personalized care, our nurses are here to ensure the best health outcomes for residents.</p>
-        </section>
-        
+      <section class="bod">
+      <section class="hero">
+        <h1>Care & Nurse Recruitment</h1>
+        <p>KENESIS - A dedicated care staffing agency, offers a comprehensive solution to your staffing needs. Our extensive pool of highly qualified staff is available to respond to urgent requests, providing you with the peace of mind that your organisation is always well-supported.</p>
+    </section>
+
+    <!-- Streamlined Solutions Section -->
+    <section class="solutions">
+        <h2>Streamlined Solutions</h2>
+        <p>Simplify your staffing process with our one-stop service. We offer a range of staffing solutions, including emergency shift coverage, and provide access to competitive training courses. Our competitive rates and commitment to compliance and training ensure that our agency workers are highly skilled and reliable.</p>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>WHY CHOOSE US</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Compliance</h3>
+                <p>We prioritize the safety and well-being of our service users. To ensure this, we adhere to stringent compliance standards. This is achieved with our comprehensive recruitment process.</p>
+            </div>
+            <div class="box">
+                <h3>Service</h3>
+                <p>Our team of highly skilled professionals is carefully selected to ensure top-quality care. We work closely with service users, families, and healthcare professionals to tailor our services and continuously improve through feedback.</p>
+            </div>
+            <div class="box">
+                <h3>Flexible 24/7 Support</h3>
+                <p>Our dedicated office support team is available round-the-clock to address any concerns or emergencies promptly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section class="commitment">
+        <h2>KENESIS COMMITMENT</h2>
+        <p>Our Guiding Principles</p>
+        <ul>
+            <li>Offers innovative, tailored staffing solutions to meet your unique staffing needs.</li>
+            <li>Committed to attracting, recruiting, and retaining highly skilled healthcare professionals.</li>
+            <li>Rigorous recruitment and training processes to ensure compliance with industry standards and clinical excellence.</li>
+            <li>Encourage open communication, effective care coordination, and data protection.</li>
+            <li>Provide efficient staffing solutions that align with your budget and service user requirements.</li>
+        </ul>
+    </section>
+
+    <!-- Enquire Section -->
+    <section class="enquire">
+        <h2>How to Enquire Your Care Needs</h2>
+        <p>To discuss your staffing needs, please contact our support team at 0203 983 7376 or submit an online inquiry.</p>
+        <a href="contact.html" class="enquiry-btn" >Make an Enquiry</a>
+    </section>
+  </section>        
     
     
 </body>
 <footer>
-    <div class="container">
-        <div class="footer-content">
-            <!-- Quick Links Section -->
-            <div class="footer-section">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <!-- Logo and Contact Info Section -->
-            <div class="footer-section logoj">
-                <a href="https://jaesit.com">
-                    <img src="assets/logo1.svg" alt="JAES Solutions Logo"/>
-                </a>
-                <p>Designed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
-                <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
-                <p>Phone: <a href="tel:+441279897648">+44 01279 897648</a></p>
-            </div>
-        </div>
-        <!-- Copyright -->
-        <div class="copyright">
-            <p>&copy; 2024 Kenesis. All rights reserved.</p>
-        </div>
+  <div class="wave-fcontainer bottom-wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,117.3C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> 
+    </div>  
+  <div class="fcontainer">
+    <div class="footer-content">
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Phone Info Section -->
+      <div class="footer-section-ph">
+        <h1>Contact Us</h1>
+        <p>Email: <a href="mailto:info@kenesis.co.uk">info@kenesis.co.uk</a></p>
+        <p>Phone: <a href="tel:+44 2039 8373760">+44 2039 837376</a></p>
+      </div>
+      <!-- Logo and Contact Info Section -->
+      <div class="footer-section logoj">
+        <a href="https://jaesit.com">
+          <img src="assets/logo1.svg" alt="JAES Solutions Logo" />
+        </a>
+        <p>Designed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
+        <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
+        <p>Phone: <a href="tel:+441279897648">+44 1279 897648</a></p>
+      </div>
     </div>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; 2024 Kenesis. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
 
 </html>

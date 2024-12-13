@@ -250,79 +250,131 @@ section p {
 }
 
 /* Footer Styles */
+/* General Footer Styling (unchanged) */
 footer {
-    height: 200px;
-    /*background-image: url(assets/bbb.png) ; */
-    background-color: #ff880d; /* For browsers that do not support gradients */
-    /*background-image: linear-gradient(to right, #fab742, #f35014);*/
-      color: #111111;
-      padding: 30px 0;
-  }
+  height: auto; /* Adjust height to fit content dynamically */
+  background-color: #ff880d; /* Vibrant background */
+  color: #111111;
+  padding: 30px 0;
+}
+.wave-fcontainer{
+  margin-top: -120px;
   
-  .container {
-      max-width: 1200px; /* Adjusted for better responsiveness */
-      margin: 0 auto;
-      padding: 0 20px;
-  }
-  
-  .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 20px; /* Added gap for better spacing between sections */
-  }
-  
-  .footer-section {
-      flex: 1;
-      min-width: 250px;
-  }
-  
-  .footer-section h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
-  }
-  
-  .footer-section p,
-  .footer-section ul {
-      font-size: 14px;
-      margin: 5px 0;
-  }
-  
-  .footer-section ul {
-      list-style: none;
-      padding: 0;
-  }
-  
-  .footer-section ul li {
-      margin-bottom: 8px;
-  }
-  
-  .footer-section ul li a {
-      color: #111111;
-      text-decoration: none;
-  }
-  
-  .footer-section ul li a:hover {
-      text-decoration: underline;
-  }
-  .logoj img {
-    width: 100px;
-    margin-bottom: 10px;
+}
+.fcontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  margin-top: -50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the Phone Info Section */
+.footer-section-ph {
+   /* Subtle background for contrast */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.footer-section-ph h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: black; /* Highlighted heading color */
+}
+
+.footer-section-ph p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.footer-section-ph a {
+  color: #852c02;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-section-ph a:hover {
+  text-decoration: underline;
+}
+
+/* Logo and Contact Info Section */
+.logoj img {
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 .logoj p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
 }
 
 .logoj a {
-    color: #111111;
-    text-decoration: none;
+  color: #111111;
+  text-decoration: none;
 }
 
 .logoj a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-  
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+  }
+  .footer-section-ph {
+    text-align: center;
+  }
+  .logoj img {
+    margin: 0 auto;
+  }
+}
