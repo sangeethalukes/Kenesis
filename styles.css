@@ -211,10 +211,7 @@ nav ul li a:hover {
 #home{
   margin-top: 60px;
 }
- .bgcolor {
-    width: 100%;
-    height: 100vh; 
-  }
+
   
   
   .bgcolor {
@@ -223,7 +220,8 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;*/
   background-size: cover;
-    
+    width: 100%;
+    height: 100vh; 
   }
   /*
 .background{
